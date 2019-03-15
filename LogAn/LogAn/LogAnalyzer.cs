@@ -1,8 +1,8 @@
 ﻿using System;
-// can be added to any file in the project
-// or can be added to assemblyInfo.cs
-using System.Runtime.CompilerServices;
-[assembly: InternalsVisibleTo("LogAn.UnitTests")]
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LogAn
 {
