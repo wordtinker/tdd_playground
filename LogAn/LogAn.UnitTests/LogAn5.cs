@@ -27,6 +27,7 @@ namespace Tests5
             log.Analyze(tooShortFileName);
             // call the mock property and test mock
             // test is here, not in the mock object
+            // there should be only one mock, several stubs are allowed
             StringAssert.Contains("Filename too short:abc.ext", mockService.LastError);
         }
     }
