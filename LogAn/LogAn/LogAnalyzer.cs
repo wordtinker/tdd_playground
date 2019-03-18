@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LogAn
 {
     public class LogAnalyzer
     {
-        internal bool IsValidLogFileName(string fileName)
+        public bool WasLastFileNameValid { get; set; } // state
+        public bool IsValidLogFileName(string fileName)
         {
+            WasLastFileNameValid = false;
+
             if (string.IsNullOrEmpty(fileName))
             {
                 throw new ArgumentException("filename has to be provided");
@@ -21,6 +20,7 @@ namespace LogAn
             {
                 return false;
             }
+            WasLastFileNameValid = true;
             return true;
         }
     }

@@ -37,5 +37,17 @@ namespace Tests
 
             StringAssert.Contains("filename has to be provided", ex.Message);
         }
+
+        [TestCase("badfile.foo", false)]
+        [TestCase("goodfile.slf", true)]
+        public void IsValidFileName_WhenCalled_ChangesWasLastFileNameValid(
+            string file, bool expected)
+        {
+            LogAnalyzer la = new LogAnalyzer();
+
+            la.IsValidLogFileName(file);
+            // check state
+            Assert.AreEqual(expected, la.WasLastFileNameValid);
+        }
     }
 }
