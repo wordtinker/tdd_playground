@@ -45,6 +45,7 @@
     <Compile Include="LogAn2.cs" />
     <Compile Include="LogAn3.cs" />
     <Compile Include="LogAn4.cs" />
+    <Compile Include="LogAn5.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

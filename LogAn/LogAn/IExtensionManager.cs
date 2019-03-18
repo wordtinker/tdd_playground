@@ -2,6 +2,11 @@
 
 namespace LogAnExt
 {
+    public interface IWebService
+    {
+        void LogError(string message);
+    }
+
     public interface IExtensionManager
     {
         bool IsValid(string fileName);

@@ -49,6 +49,7 @@
     <Compile Include="LogAnalyzerFactory.cs" />
     <Compile Include="LogAnalyzerFactoryMethod.cs" />
     <Compile Include="LogAnalyzerProp.cs" />
+    <Compile Include="LogAnalyzerWithService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
