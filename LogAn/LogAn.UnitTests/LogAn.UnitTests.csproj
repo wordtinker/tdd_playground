@@ -41,6 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LogAn.cs" />
+    <Compile Include="LogAn1.cs" />
+    <Compile Include="LogAn2.cs" />
+    <Compile Include="LogAn3.cs" />
+    <Compile Include="LogAn4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

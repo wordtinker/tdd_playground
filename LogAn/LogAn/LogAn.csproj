@@ -43,7 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IExtensionManager.cs" />
     <Compile Include="LogAnalyzer.cs" />
+    <Compile Include="LogAnalyzerCtor.cs" />
+    <Compile Include="LogAnalyzerFactory.cs" />
+    <Compile Include="LogAnalyzerFactoryMethod.cs" />
+    <Compile Include="LogAnalyzerProp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
